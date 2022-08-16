@@ -1,4 +1,4 @@
-# [See Live](www.keremnalbant-weather-app.netlify.app)
+# [See Live](https://www.keremnalbant-weather-app.netlify.app)
 
 # Getting Started with Create React App
 
