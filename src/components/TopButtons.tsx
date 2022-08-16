@@ -1,6 +1,6 @@
 import React from "react";
 
-const TopButtons = () => {
+const TopButtons = ({ handleButtonClick }) => {
   const cities = [
     {
       id: 1,
@@ -8,26 +8,34 @@ const TopButtons = () => {
     },
     {
       id: 2,
-      title: "London",
+      title: "Istanbul",
     },
     {
       id: 3,
-      title: "Tokyo",
-    },
-    {
-      id: 4,
       title: "New York",
     },
     {
-      id: 5,
-      title: "Istanbul",
+      id: 4,
+      title: "London",
     },
+    {
+      id: 5,
+      title: "Tokyo",
+    }
   ];
-  return <div className="outline-double rounded-xl outline-white flex items-center justify-around my-6">
-    {cities.map((city) => (
-        <button key={city.id} className="cursor-pointer transition ease-out hover:scale-110 text-white text-lg font-medium">{city.title}</button>
-    ))}
-  </div>
+  return (
+    <div className="rounded-xl outline-white flex items-center justify-around my-6">
+      {cities.map((city) => (
+        <button
+          onClick={() => handleButtonClick({ q: city.title })}
+          key={city.id}
+          className="cursor-pointer transition ease-out hover:scale-110 text-white text-lg font-medium"
+        >
+          {city.title}
+        </button>
+      ))}
+    </div>
+  );
 };
 
 export default TopButtons;

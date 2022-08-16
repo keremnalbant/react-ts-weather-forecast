@@ -1,0 +1,20 @@
+export type WeatherData = {
+  lat: any;
+  lon: any;
+  temp: any;
+  feels_like: any;
+  temp_min: any;
+  temp_max: any;
+  humidity: any;
+  name: any;
+  dt: any;
+  country: any;
+  sunrise: any;
+  sunset: any;
+  details: any;
+  icon: any;
+  speed: any;
+  timezone: any;
+  daily: any;
+  hourly: any;
+};
